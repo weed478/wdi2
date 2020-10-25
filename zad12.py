@@ -1,8 +1,8 @@
-from math import floor, log10
+from math import log10
 
 number = int(input("> "))
 
-n_digits = floor(log10(number)) + 1
+n_digits = int(log10(number)) + 1
 
 while number > 0:
     number, digit = divmod(number, 10)
